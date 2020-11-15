@@ -1,0 +1,19 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL 1h	; Default TTL
+@	IN	SOA	sample.larendacs.pc.	admin.sample.larendacs.pc. (
+	2019022001	; serial
+	1h		; slave refresh interval
+	15m		; slave retry interval
+	1w		; slave copy expire time
+	1h		; NXDOMAIN cache time
+	)
+
+;
+; domain name servers
+;
+@	IN	NS	sample.larendacs.pc.
+
+; IPv6 PTR entries
+ip6    IN    PTR    sample.larendacs.pc.

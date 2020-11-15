@@ -1,0 +1,18 @@
+$TTL    604800
+@       IN      SOA     sample.larendacs.pc. admin.sample.larendacs.pc. (
+                  3       ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            2419200     ; Expire
+             604800 )   ; Negative Cache TTL
+;
+; name servers - NS records
+     IN      NS      sample.larendacs.pc.
+
+; name servers - A records
+sample.larendacs.pc.          IN      A       192.168.2.ip4
+
+; 10.128.0.0/16 - A records
+sample.larendacs.pc.        IN      AAAA   2001:6b68:696c:6d79:746b:6a73:6174:ipv6
+www.sample.larendacs.pc.    IN      A      192.168.2.ip4
+www.sample.larendacs.pc.    IN      AAAA   2001:6b68:696c:6d79:746b:6a73:6174:ipv6
