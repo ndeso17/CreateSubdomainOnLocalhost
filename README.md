@@ -22,6 +22,7 @@ cp run.sh /usr/lib/cgi-bin</br>
 chmod 777 /usr/lib/cgi-bin</br>
 chmod 777 /usr/lib/cgi-bin/*</br>
 chmod 777 /home</br>
+chmod 777 /var/www</br>
 chmod 777 /etc/apache2/sites-available</br>
 nano /usr/lib/cgi-bin/run.sh</br>
 Ganti password : passwordmysql setelah itu keluar lalu simpan</br>
